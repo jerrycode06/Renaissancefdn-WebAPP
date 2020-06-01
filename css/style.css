@@ -34,6 +34,19 @@ body {
   height: 50px;
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
 /* Navigation Bar : List Styling  */
 
 /* Dropdown Button */
@@ -126,36 +139,6 @@ body {
   background-color: rgb(197, 197, 0);
 }
 
-/* Top Button  */
-.top {
-  display: flex;
-  border-radius: 10px;
-  width: 34px;
-  height: 24px;
-  margin: 2px;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  font-family: Rubika, sans-serif;
-  background-color: rgb(32, 34, 28);
-  transition: 1s ease;
-  position: sticky;
-}
-
-.top:hover {
-  background-color: #d4b500;
-  cursor: pointer;
-}
-.top a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-#box {
-  position: absolute;
-  top: 683px;
-  left: 1480px;
-}
 /* Home Section  */
 #home {
   display: flex;
