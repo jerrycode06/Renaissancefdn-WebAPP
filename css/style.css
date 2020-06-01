@@ -252,7 +252,7 @@ body {
 }
 .all-title-box p {
   /* font-weight: 400; */
-  font-size: 18px;
+  /* font-size: 18px; */
   line-height: 33px;
 }
 /* About Us Section */
@@ -463,11 +463,12 @@ body {
   padding: 34px;
   margin: 20px 62px;
   border-radius: 25px;
-  background-color: #000000;
+  background-color: #d4b500;
+  color: #000;
 }
 
 #ins-sec .box img {
-  height: 80px;
+  height: 120px;
   margin: auto;
   display: block;
 }
