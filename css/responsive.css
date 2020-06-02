@@ -4,7 +4,8 @@
   /* flex-direction: column; */
 }
 
-.nav-list {
+#navbar ul {
+  display: flex;
   flex-direction: column;
 }
 #navbar ul li a {
@@ -80,4 +81,14 @@ a.active {
 .btn {
   font-size: 13px;
   padding: 4px 8px;
+}
+
+#about {
+  flex-direction: column;
+}
+#ins-sec {
+  flex-direction: column;
+}
+#features-sec {
+  flex-direction: column;
 }
