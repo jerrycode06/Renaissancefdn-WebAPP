@@ -124,7 +124,7 @@ body {
   list-style: none;
   font-size: 1.1rem;
   padding: 0px;
-  margin:5px 0px;
+  margin: 5px 0px;
 }
 
 #navbar ul li a {
@@ -155,7 +155,7 @@ body {
 #home::before {
   content: " ";
   background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
-    url(../img/bg1.jpg);
+    url(../img/Home.jpg);
   position: absolute;
   top: 0px;
   left: 0px;
