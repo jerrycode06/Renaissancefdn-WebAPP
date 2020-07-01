@@ -26,6 +26,22 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      @media screen and (max-width: 450px) {
+        #ins-sec .box {
+          margin: 0px 0px;
+          padding: 0px;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        #home::before {
+          top: 60px;
+          left: 0px;
+
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar  -->
@@ -74,7 +90,9 @@
         Platforms, Competitive & Academic learning. We provide best learning
         experiences and fruitful outcomes in the field of academics.
       </p>
-      <button class="button"><span>See More </span></button>
+      <a href="about.html"
+        ><button class="button"><span>See More </span></button></a
+      >
     </section>
 
     <!-- About Section  -->
@@ -133,18 +151,22 @@
           <img src="img/9291.jpg" alt="" />
           <h2 class="h-secondary">Dr. APJ Abdul Kalam</h2>
           <p class="center">
-            “Learning gives creativity, Creativity leads to thinking, Thinking
-            provides knowledge and Knowledge makes you great.”
+            <span id="fit"
+              >“Learning gives creativity, Creativity leads to thinking,
+              Thinking provides knowledge and Knowledge makes you great.”</span
+            >
           </p>
         </div>
         <div class="box">
           <img src="img/chanakya.webp" alt="" />
           <h2 class="h-secondary">Guru Chanakya (Kautilya)</h2>
           <p class="center">
-            “Before you start some work, always ask yourself three questions -
-            Why am I doing it, What the results might be and Will I be
-            successful. Only when you think deeply and find satisfactory answers
-            to these questions, go ahead.”
+            <span id="fit"
+              >“Before you start some work, always ask yourself three questions
+              - Why am I doing it, What the results might be and Will I be
+              successful. Only when you think deeply and find satisfactory
+              answers to these questions, go ahead.”</span
+            >
           </p>
         </div>
       </div>
@@ -238,7 +260,7 @@
               <div class="footer-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Faculty</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </div>
@@ -257,15 +279,25 @@
               <div class="footer-links">
                 <li>
                   <a href="mailto:renaissancefdn@gmail.com"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i
                     >renaissancefdn@gmail.com</a
                   >
                 </li>
-                <li><a href="index.html">www.renaissancefoundation.com</a></li>
                 <li>
-                  Behind Abha Regency,Vishnupuri,Ramghat
-                  Road,Aligarh(U.P)-202001
+                  <a href="index.html"
+                    ><i class="fa fa-window-maximize" aria-hidden="true"></i
+                    >www.renaissancefoundation.com</a
+                  >
                 </li>
-                <li>+91 8445947179, +91 9084909605</li>
+                <li>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>Behind Abha
+                  Regency,Vishnupuri,Ramghat
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Road,Aligarh(U.P)-202001
+                </li>
+                <li>
+                  <i class="fa fa-phone" aria-hidden="true"></i>+91 8445947179,
+                  +91 9084909605
+                </li>
               </div>
               <!-- end links -->
             </div>
@@ -297,8 +329,39 @@
         </div>
       </div>
       <!-- end container -->
+      <a
+        id="back-to-top"
+        href="#"
+        class="btn btn-light btn-lg back-to-top"
+        role="button"
+        ><i class="fas fa-chevron-up"></i
+      ></a>
     </div>
     <!-- end copyrights -->
+    <a href="#" class="scrollup"
+      ><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i
+    ></a>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $("#back-to-top").fadeIn();
+          } else {
+            $("#back-to-top").fadeOut();
+          }
+        });
+        // scroll body to 0px on click
+        $("#back-to-top").click(function () {
+          $("body,html").animate(
+            {
+              scrollTop: 0,
+            },
+            400
+          );
+          return false;
+        });
+      });
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

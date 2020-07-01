@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 #navbar ul li a {
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 0px 7px;
   padding-bottom: 8px;
 }
@@ -56,7 +56,7 @@ a.active {
 }
 
 #home::before {
-  width: 100%;
+  height: 480px;
 }
 
 #home p {
